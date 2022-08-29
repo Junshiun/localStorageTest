@@ -2,7 +2,10 @@
 <html>
 <head>
 <script>
-    window.localStorage.setItem("random", Math.random()*1000)
+    console.log("The previous random is " + window.localStorage.getItem("random"));
+    let random = Math.random()*1000;
+    console.log("The random set is " + random)
+    window.localStorage.setItem("random", random);
 </script>
 </head>
 <body>
